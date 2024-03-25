@@ -95,8 +95,6 @@ body{
     justify-items: center;
     align-items: center;
     padding-top: 5rem;
-    padding-bottom: 5rem;
-
 }
 
 #lernMore{
@@ -183,6 +181,35 @@ h3{
     padding: 1rem 1rem 1rem 1rem;
 }
 
+#ourTeam{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+#teamLeft{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.teamImages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+#teamRight{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 /* how it would look on phones */
 @media screen and (max-width: 500px) {
     #hero{
@@ -252,6 +279,14 @@ h3{
     #ctaBanner{
         display: flex;
         justify-content: center;
+    }
+    #ourTeam{
+        display: flex;
+        flex-direction: column;
+    }
+    .teamImages{
+        display: flex;
+        flex-direction: column;
     }
 }
 /* how it will look on tablets */
